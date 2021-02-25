@@ -1,6 +1,6 @@
-Author: Leonel Jeffrey
-Date: 25/02/2021
-Task: deciding what to wear depending on weather condition. This is done using if-else statement
+#Author: Leonel Jeffrey
+#Date: 25/02/2021
+#Task: deciding what to wear depending on weather condition. This is done using if-else statement
 cold = True
 wet = True
 if wet:
