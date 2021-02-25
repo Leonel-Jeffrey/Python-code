@@ -1,6 +1,6 @@
-Author: Leonel Jeffrey
-Date: 25/02/2021
-Task: To check if you have achieve  a pass. This is done using an if-else statement.
+#Author: Leonel Jeffrey
+#Date: 25/02/2021
+#Task: To check if you have achieve  a pass. This is done using an if-else statement.
 
 my_mark = int(input("Enter your mark: "))
 if my_mark >= 40:
