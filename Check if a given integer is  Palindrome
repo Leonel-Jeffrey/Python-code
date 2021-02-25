@@ -1,0 +1,49 @@
+Author: Leonel Jeffrey
+Date: 25/02/2021
+# This program includes a number of alternative function to check whether a given integer is palindrome
+
+# returns True if number is a palindrome and False otherwise
+def is_palindrome(int_num):
+    return int_num == int(str(int_num)[::-1])
+
+#funtion to reverse a given integer
+def int_reverse(int_num):
+  s = ""
+  for i in str(int_num):
+    s = i + s
+  return int(s)
+
+# alternative 1 to reverse a given number
+def int_reverse1(int_num):
+  return int(str(int_num)[::-1])
+
+# alternative 2 to reverse a given number
+def int_reverse2(int_num):
+    rev = 0
+    while int_num!=0:
+        digit = int_num % 10   # get last digit
+        rev = rev*10 + digit   # put digit in reverse position
+        int_num //= 10         # returns the integer resulting from the division (i.e. integer without last digit)
+    return rev
+
+# alternative 1 to check if number is palindrome
+def is_palindrome1(int_num):
+    return int_num == int_reverse(int_num)
+
+# alternative 2 to check if number is palindrome
+def is_palindrome2(int_num):
+    return int_num == int_reverse1(int_num)
+
+# alternative 3 to check if number is palindrome
+def is_palindrome3(int_num):
+    return int_num == int_reverse2(int_num)
+
+#test
+print(is_palindrome(12345678))
+print(is_palindrome(18111181))
+print(is_palindrome1(12345678))
+print(is_palindrome1(18111181))
+print(is_palindrome2(12345678))
+print(is_palindrome2(18111181))
+print(is_palindrome3(12345678))
+print(is_palindrome3(18111181))
