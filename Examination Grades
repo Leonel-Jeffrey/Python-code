@@ -1,0 +1,53 @@
+Author: Leonel Jeffrey
+Date: 25/02/2021
+# Exam Grades
+# This program displays students in ascending order of their grade  using functions
+
+# Grades per student
+def get_grades(student_answers, model_answers):
+    student_grades = {}
+    for name in student_answers:
+        # Grade for one student
+        correctCount = 0
+        for j in range(len(student_answers[name])):
+            if student_answers[name][j] == model_answers[j]:
+                correctCount += 1
+        #print("Student", i, "achieved", correctCount, "correct answers.")
+        # add the correctCount result per student on the studentAchievementsList
+        student_grades[name] = correctCount
+    return student_grades
+
+
+# sort dictionary by grade value in ascending order
+# Note: there is an easier way using lmbda expression which will be covered later on COMP1811
+def display_sorted_by_grade(std_grades):
+    sorted_student_grades = sorted((value,key) for (key,value) in std_grades.items())
+    sorted_student_grades = dict((key, value) for (value, key) in sorted_student_grades)
+    for name in sorted_student_grades:
+        print(name, "achieved", sorted_student_grades[name], "correct answers.")
+
+
+def main():
+    # Students' answers to exam questions
+    std_answers = {
+        "Adam": ['A', 'B', 'A', 'C', 'C', 'D', 'A', 'D', 'A', 'E'],
+        "Bob": ['D', 'B', 'A', 'B', 'C', 'A', 'C', 'D', 'A', 'E'],
+        "Carol": ['A', 'C', 'D', 'A', 'C', 'B', 'C', 'D', 'A', 'E'],
+        "Jon": ['C', 'B', 'A', 'E', 'D', 'C', 'A', 'D', 'A', 'E'],
+        "Liz": ['A', 'B', 'A', 'C', 'A', 'E', 'D', 'E', 'A', 'E'],
+        "Marc": ['A', 'C', 'D', 'C', 'C', 'D', 'A', 'D', 'A', 'E'],
+        "Mia": ['B', 'B', 'E', 'C', 'A', 'D', 'A', 'D', 'A', 'E'],
+        "Zia": ['E', 'B', 'E', 'C', 'A', 'E', 'C', 'E', 'A', 'E']
+    }
+
+    # Key to the questions
+    mdl_answers = ['A', 'C', 'D', 'C', 'A', 'D', 'A', 'D', 'A', 'E']
+
+    display_sorted_by_grade(get_grades(std_answers, mdl_answers))
+
+    # or
+    # grades_dict = get_grades(std_answers, mdl_answers)
+    # display_sorted_by_grade(grades_dict)
+
+
+main()
