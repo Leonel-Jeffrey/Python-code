@@ -1,7 +1,7 @@
-Author: Leonel Jeffrey
-Date: 25/02/2021
-Task: Check if a number is even and less than 50
-Solution: the if and else statement is used to figure out this
+#Author: Leonel Jeffrey
+#Date: 25/02/2021
+#Task: Check if a number is even and less than 50
+#Solution: the if and else statement is used to figure out this
 num = int(input("Enter an integer number: "))
 if num % 2 == 0 and num < 50:
     print("Number entered is an even number and is < 50")
