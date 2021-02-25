@@ -1,0 +1,15 @@
+Author: Leonel Jeffrey
+Date: 25/02/2021
+Task: deciding what to wear depending on weather condition. This is done using if-else statement
+cold = True
+wet = True
+if wet:
+    if cold:
+        print("Wear a waterproof coat.")
+    else:
+       print("Take an umbrella.")
+else:
+    if cold:
+        print("Wear a warm coat.")
+    else:
+        print("A jacket is enough.")
