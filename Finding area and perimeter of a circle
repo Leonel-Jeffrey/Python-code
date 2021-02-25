@@ -1,0 +1,20 @@
+Author: Leonel Jeffrey
+Date: 25/02/2021
+Task: Python program to find the peimeter of a circle
+import math
+#Circle class
+class Circle:
+    #initializing radius
+    def __init__(self, radius):
+        self.radius=radius
+    #area function that returns area of the circle
+    def area(self):
+        return math.pi*self.radius*self.radius
+    #perimeter function that returns perimeter of the circle    
+    def perimeter(self):
+        return 2*math.pi*self.radius
+#creating Circle object by passing 5 as radius        
+circle = Circle(5)
+#calling area and Perimeter functions and printing the results
+print("Area: "+str(circle.area()))
+print("Perimeter: "+str(circle.perimeter()))
