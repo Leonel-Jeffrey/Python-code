@@ -1,0 +1,15 @@
+Author: Leonel Jeffrey
+Date: 25/02/2021
+Task: To classify Grades: If and else statements are used to illustrate this
+my_grade = int(input("Enter your grade: "))
+if my_grade >= 70 :
+    print("First")
+elif my_grade >= 60:
+    print("Upper second")
+elif my_grade >= 50:
+    print("Lower second")
+elif my_grade >= 40:
+    print("Third")
+else:
+    print("Fail")
+
