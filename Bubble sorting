@@ -1,5 +1,5 @@
-#Author: Leonel Jeffrey
-#Date: 25/02/2021
+#  Author: Leonel Jeffrey
+#   Date: 25/02/2021
 # Python code to implement bubble sorting
 def bubble_sort(arr):
     n = len(arr)
