@@ -1,0 +1,10 @@
+Author Leonel Jeffrey Nzeukeng Kamga
+Date: 01/09/2021
+Version: 3.9
+
+color = input("Enter a Color: ")
+pluralNoun = input("Enter a Plural Noun: ")
+celebrity = input("Enter the name of a celebrity: ")
+print("Roses are ", color)
+print(pluralNoun, " is blue")
+print("I like ", celebrity)
