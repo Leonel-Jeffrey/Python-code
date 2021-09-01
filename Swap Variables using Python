@@ -1,0 +1,12 @@
+Author Leonel Jeffrey Nzeukeng Kamga
+Date: 01/09/2021
+Version: 3.9
+
+a = 8
+b = 10
+
+c = a
+a = b
+b = c
+print("a =", a)
+print("b = ", b)
