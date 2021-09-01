@@ -1,0 +1,8 @@
+Author Leonel Jeffrey Nzeukeng Kamga
+Date: 01/09/2021
+Version: 3.9
+
+while True:
+    reply = input("Enter Text: ")
+    if reply == 'stop': break
+    print(reply)
