@@ -1,0 +1,12 @@
+Author Leonel Jeffrey Nzeukeng Kamga
+Date: 01/09/2021
+Version: 3.9
+
+def ip_address(address):
+    new_address = ""
+    split_address = address.split(".")
+    separator = "[.]"
+    new_address = separator.join(split_address)
+    return new_address
+ipaddress = ip_address("1.1.2.3")
+print(ipaddress)
